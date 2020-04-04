@@ -11,6 +11,6 @@ function scrollMenu(){
 	{
 		scrollTop: posicaoMenu+"px"
 
-	},1300);
+	},900);
 
 }

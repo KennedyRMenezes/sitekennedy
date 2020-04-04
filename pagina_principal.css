@@ -1,28 +1,29 @@
 html, body {height: 100%}
 
-.banner {
-	width: 99%;
-	margin-left: 0.5%;
+.caixa-logo {
+	display: flex;
+	justify-content: center;
 
 }
+
 
 .logo-principal {
 	width: 4.5%;
-	margin-left: 48.3%;
-	padding-top: 0.5%;
 }
 
 nav ul {
-	margin-left: 40.5%; /*tentando deixar centralizado*/
+	display: flex;
+	justify-content: center;
 	margin-bottom: 1%;
-
 }
 
+
 nav li {
-	display: inline;
+	display: flex;
 	margin: 0 1%;
 	font-family: sans-serif;
 	font-size: 0.8em;
+
 }
 
 nav a {
@@ -35,6 +36,43 @@ nav a:hover {
 	font-weight: bold;
 }
 
+.menu{
+	margin-left: 15.3%;
+	font-size: 30px;
+}
+
+.menu-barra{
+	display: flex;
+	border-bottom: 1px black solid;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.procurar {
+	vertical-align: middle;
+	margin: 1%;
+}
+
+.box-middle {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.banner {
+	width: 55%;
+	margin-left: 0.5%;
+	flex-grow: 0;
+}
+
+.frase1 {
+	font-size: 1em;
+	flex-grow: 1;
+	margin-top: 10%;
+}
+
+
 footer {
 	font-family: sans-serif;
 	font-size: 1em;
@@ -45,21 +83,7 @@ footer {
 	vertical-align: baseline;
 }
 
-.menu{
-	margin-left: 15.3%;
-	font-size: 30px;
-}
 
-.menu-barra{
-	display: none;
-	margin-left: 41%;
-	border-bottom: 1px black solid;
-}
-
-.procurar {
-	vertical-align: middle;
-	margin: 1%;
-}
 
 
 
@@ -101,7 +125,41 @@ p strong:hover {
 	font-size: 3.5em;
 }
 
-/*BLOG - SOCIAL - GALERIA --------------------------------------------------------------------------------------------*/
+/*BLOG ------------------------------------------------------------------------------------------------------*/
+
+.area-post {
+	display: flex;
+	justify-content: center;
+}
+
+.post {
+
+	color: black;
+	background-color: #F0F8FF;
+	width: 300px;
+	height: 300px;
+	margin: 5%;
+	box-shadow: 3px 3px 10px #B0C4DE;
+	transition: .7s;
+}
+
+.post:hover {
+	width: 315px;
+	height: 315px;
+}
+
+.nome-post {
+	margin-top: 42%;
+	font-family: sans-serif;
+	font-size: 2em;
+	text-align: center;
+	
+}
+
+
+
+
+/*SOCIAL - GALERIA --------------------------------------------------------------------------------------------*/
 
 .em-construcao {
 	font-size: 4em;
