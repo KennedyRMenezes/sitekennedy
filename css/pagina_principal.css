@@ -1,29 +1,32 @@
-html, body {height: 100%}
-
-.caixa-logo {
+header {
 	display: flex;
 	justify-content: center;
-
 }
+
+.principal {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.caixa-logo { /*-----------------------------------------------------------------*/}
 
 
 .logo-principal {
-	width: 4.5%;
+	width: 70px;
 }
 
-nav ul {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 1%;
-}
+nav { /*-----------------------------------------------------------------*/}
+
+nav ul { /*-----------------------------------------------------------------*/}
 
 
 nav li {
-	display: flex;
-	margin: 0 1%;
+	margin: 0 3%;
 	font-family: sans-serif;
-	font-size: 0.8em;
-
+	font-size: 0.9em;
+	text-decoration: none;
 }
 
 nav a {
@@ -36,48 +39,49 @@ nav a:hover {
 	font-weight: bold;
 }
 
-.menu{
-	margin-left: 15.3%;
-	font-size: 30px;
-}
 
 .menu-barra{
 	display: flex;
-	border-bottom: 1px black solid;
-	align-items: center;
-	justify-content: center;
-	
+	align-items: center; 
+	width: 300px;
+	padding-bottom: 5%;
 }
 
 .procurar {
 	vertical-align: middle;
-	margin: 1%;
+	margin: %;
 }
 
 .box-middle {
 	display: flex;
-	align-items: flex-start;
+	justify-content: space-between;
 	width: 100%;
 }
 
 .banner {
+	display: flex;
 	width: 55%;
-	margin-left: 0.5%;
+	margin-left: 0.3%;
 	flex-grow: 0;
 }
 
 .frase1 {
-	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
 	flex-grow: 1;
-	margin-top: 10%;
+	margin-top: 15%;
+	font-family: 'Coustard', serif;
 }
 
 
 footer {
+	width: 100%;
+	text-align: center;
 	font-family: sans-serif;
 	font-size: 1em;
-	text-align: center;
-	margin: 1%;
+	margin-top: 3%;
+	margin-bottom: 2%;
 	text-decoration: none;
 	color: black;
 	vertical-align: baseline;
@@ -88,6 +92,11 @@ footer {
 
 
 /*Página Sobre -------------------------------------------------------------------------------------------------------*/
+
+.div-sobre {
+	margin-top: 2%; 
+}
+
 
 .foto-perfil {
 	width: 20%;
@@ -111,9 +120,11 @@ footer {
 	margin-bottom: 3%;
 }
 
-p {
+div p {
 	text-align: center;
 	padding: 1%;
+	font-size: 1.2em;
+	font-family: 'Coustard', serif;
 }
 
 p strong {
@@ -127,25 +138,35 @@ p strong:hover {
 
 /*BLOG ------------------------------------------------------------------------------------------------------*/
 
+.corpo {
+	display: flex;
+	justify-content: center;
+}
+
+
 .area-post {
 	display: flex;
 	justify-content: center;
+	width: 70%;
+	flex-wrap: wrap;
+	margin-top: 5%;
 }
 
 .post {
 
 	color: black;
 	background-color: #F0F8FF;
-	width: 300px;
-	height: 300px;
-	margin: 5%;
+	width: 250px;
+	height: 250px;
+	margin: 1.5%;
 	box-shadow: 3px 3px 10px #B0C4DE;
-	transition: .7s;
+	transition: .4s;
+
 }
 
 .post:hover {
-	width: 315px;
-	height: 315px;
+	width: 253px;
+	height: 253px;
 }
 
 .nome-post {
@@ -153,20 +174,6 @@ p strong:hover {
 	font-family: sans-serif;
 	font-size: 2em;
 	text-align: center;
+	font-family: 'Coustard', serif;
 	
-}
-
-
-
-
-/*SOCIAL - GALERIA --------------------------------------------------------------------------------------------*/
-
-.em-construcao {
-	font-size: 4em;
-}
-
-.imagem-construcao {
-	font-size: 2000%;
-	margin-left: 39%;
-	color: black;
 }
