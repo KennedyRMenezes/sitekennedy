@@ -37,7 +37,7 @@ nav a:hover {
 	font-weight: bold;
 }
 
-.menu-abrir, .menu-fechar {
+.menu-abrir, .menu-fechar { /*Some no Desktop, porém os ícones somem também no mobile/responsivo*/
 	display: none;
 }
 
