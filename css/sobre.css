@@ -40,3 +40,15 @@ p strong {
 p strong:hover {
 	font-size: 3.5em;
 }
+
+@media (max-width: 750px) {
+
+	.foto-perfil {
+		width: 40%;
+		margin-left: 30%;
+		border-radius: 300px;
+		margin-top: 3%;
+	}
+
+}
+

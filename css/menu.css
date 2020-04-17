@@ -1,0 +1,171 @@
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.principal {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+}
+
+
+.logo-principal {
+	width: 70px;
+}
+
+
+nav li {
+	margin: 0 3%;
+	font-family: sans-serif;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+.area-menu{
+	display: flex;
+	align-items: center; 
+	width: 300px;
+	padding-bottom: 5%;
+}
+
+
+.procurar {
+	vertical-align: middle;
+	margin: %;
+}
+
+
+
+
+@media (max-width: 750px) { /*---------------------------------------MEDIA ----------------------------------------------*/
+
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.principal {
+		display: flex;
+		align-items: space-around;
+		width: 80%;
+		flex-wrap: wrap;
+	}
+
+
+	.logo-principal {
+		width: 70px;
+	}
+
+
+	nav li {
+		margin: 0 3%;
+		font-family: sans-serif;
+		font-size: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: black;
+		text-transform: uppercase;
+	}
+
+	.area-menu {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		height: 40%;
+		width: 100%;
+		margin-bottom: 130%;
+		
+	}
+
+	.menu-barra {
+		background: white;
+		padding: 1em;
+	
+
+		height: 100%;
+		width: 70%;
+		max-width: 95%;
+
+		position: fixed;
+		top: 0;
+		right: -999%;
+
+		transition: right 0.1s ease-out;
+	}
+
+	.menu-ativo .menu-barra {
+		right: 0;
+	}
+
+
+
+	/* Estilização dos botões */
+	.menu-abrir, .menu-fechar { 
+		background: none;
+		border: 0;
+		outline: 0;
+		-webkit-appearance: none;
+		font-size: 1.6em;
+		text-indent: -999em;
+	}
+
+	/* 3 linhas do menu*/
+	.menu-abrir { 
+		height: 0;
+		width: 1em;
+		padding-top: .100em;
+		border-top: .375em double #000;
+		border-bottom: .125em solid #000;
+
+		vertical-align: middle;
+	}
+
+	/*posicionamento do X p/ fechar menu*/
+	.menu-fechar { 
+		position: relative;
+		height: 1em;
+		width: 1em;
+	}
+
+	/* X do menu p/ fechar*/
+	.menu-fechar:before { 
+		content: '\00D7';
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: 0;
+	}
+
+	.procurar {
+	vertical-align: middle;
+	margin: %;
+	}
+}
+
+@media not all and (max-width: 750px) {
+	.menu-abrir, .menu-fechar {
+		display: none;
+		background: none;
+		border: 0;
+		outline: 0;
+		-webkit-appearance: none;
+		font-size: 1.6em;
+		text-indent: -999em;
+	}
+}
