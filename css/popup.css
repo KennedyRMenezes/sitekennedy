@@ -1,0 +1,69 @@
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.modal-content {
+	width: 500px;
+	height: 300px;
+	opacity: 1;
+	background-color: white;
+	border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+.img-popup {
+	width: 90px;
+	border-radius: 100px;
+}
+
+.button {
+	background-color: #1686d9;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+
+}
+
+.button:hover {
+	background-color: white;
+	color: #1686d9;
+	border: 2px solid #1686d9;
+}
+
+input {
+	width: 50%;
+	height: 25px;
+	display: block;
+	margin: 15px auto;
+
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+	font-size: 42px;
+	right: 14px;
+	transform: rotate(45deg);
+	margin-top: 4px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.close:hover {
+	font-size: 45px;
+}
